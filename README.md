@@ -1,7 +1,12 @@
-# ETS repository for the INSPIRE Validator
+# ETS repository for Metadatenvalidator GDI-BW
 
-This is the repository for all Executable Test Suites of the [INSPIRE validator](http://inspire-sandbox.jrc.ec.europa.eu/validator/). The validator uses [ETF](http://etf-validator.net/) as the test framework software tool.
+Hinweis:
+Der Ordner für ETF unter
 
-The repository [ets-test-resources](https://github.com/inspire-eu-validation/ets-test-resources) includes Test Objects and expected test results that are used for automated regression tests.
+...\etf\projects\
 
-&copy; 2017 European Union. Licensed under the [EUPL](LICENSE).
+muss folgende Namenskonvention haben:
+
+ets-[...]-repository
+
+Wenn die Namenskonvention nicht eingehalten ist, werden die Testklassen in ETF UI nicht angezeigt, obwohl vorhanden
