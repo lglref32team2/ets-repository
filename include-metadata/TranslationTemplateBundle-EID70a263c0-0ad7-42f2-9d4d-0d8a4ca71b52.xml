@@ -1671,9 +1671,9 @@ In other cases, gmd:otherConstraints shall include a non-empty free text element
 		  <TranslationTemplate language="en" name="TR.emptyFreeText">XML document '{filename}', record '{id}': An empty PT_FreeText element has been found in the following path: {path}</TranslationTemplate>
           </translationTemplates>
          </LangTranslationTemplateCollection>
-	 
+
 	<!-- ETS Errors for Haleconnect generated test suites -->	
-          <LangTranslationTemplateCollection name="TR.missingMandatoryTypeError">
+    <LangTranslationTemplateCollection name="TR.missingMandatoryTypeError">
 		 <translationTemplates>
 			<TranslationTemplate language="en" name="TR.missingMandatoryTypeError">XML document '{filename}', record '{fileIdentifier}': The element with name '{localName}' and namespace '{namespace}' is mandatory in this Profile, but it wasn't found.</TranslationTemplate>
 		 </translationTemplates>
