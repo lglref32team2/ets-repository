@@ -1,1 +1,1 @@
-INSPIRE ETS can be found in this repository. 
+INSPIRE ETS can be found in metadata directory. 
