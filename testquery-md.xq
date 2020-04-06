@@ -151,6 +151,19 @@ declare function local:check-resource-uris($uris as xs:string*, $timeoutInS as x
   ))
 };
 
+declare function local:switch-url-request($url as xs:string) as element()*
+{
+  try{
+    fn:doc($url)/element()
+  }catch * {
+    if (starts-with($url, 'http://')) then
+      fn:doc(fn:replace($url,"http://","https://"))/element()
+    else if (starts-with($url, 'https://')) then
+      fn:doc(fn:replace($url,"https://","http://"))/element()
+    else ()
+  }
+};
+
 (:
 @throws: an error that explains why the code list could not be accessed
 :)
@@ -233,6 +246,24 @@ declare function local:is-valid-date-or-dateTime($dateString as xs:string?) as x
     } catch * {
       'INVALID'
     }
+    	let $year := 
+    try {
+      let $tmp := xs:gYear($dateString)
+      return
+        (: NOTE: apparently, the value of the xs:date must be evaluated to be parsed by BaseX :)
+       'DATE ' || $tmp
+    } catch * {
+      'INVALID'
+    }
+    	let $yearMonth := 
+    try {
+      let $tmp := xs:gYearMonth($dateString)
+      return
+        (: NOTE: apparently, the value of the xs:date must be evaluated to be parsed by BaseX :)
+       'DATE ' || $tmp
+    } catch * {
+      'INVALID'
+    }
   let $dateTime :=
     try {
       let $tmp := xs:dateTime($dateString)
@@ -243,7 +274,7 @@ declare function local:is-valid-date-or-dateTime($dateString as xs:string?) as x
       'INVALID'
     }
   return
-    if(starts-with($date,'DATE') or starts-with($dateTime,'DATETIME')) then
+    if(starts-with($date,'DATE') or starts-with($year,'DATE') or starts-with($yearMonth,'DATE') or starts-with($dateTime,'DATETIME')) then
       true()
     else
       false()
