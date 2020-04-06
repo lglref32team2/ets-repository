@@ -1,7 +1,11 @@
-# ETS repository for the INSPIRE Validator
+# ETS repository für Metadatenvalidierung GDI-BW
 
-This is the repository for all Executable Test Suites of the [INSPIRE validator](http://inspire-sandbox.jrc.ec.europa.eu/validator/). The validator uses [ETF](http://etf-validator.net/) as the test framework software tool.
+In diesem Repository finden Sie alle ausführbaren Testsuiten (ETS) des Metadatenprofils GDI-BW für [Metadatenvalidierung GDI-BW](https://www.geoportal-bw.de/validator/) und von INSPIRE-community entwickelten metadaten-spezifischen [Testsuiten](https://github.com/inspire-eu-validation/) für [INSPIRE validator](inspire.ec.europa.eu/validator/). 
 
-The repository [ets-test-resources](https://github.com/inspire-eu-validation/ets-test-resources) includes Test Objects and expected test results that are used for automated regression tests.
+Generierung der Metadatenprofil-Testsuiten erfolgt mit Hilfe eines Profil Management Tool (PMT). Informationen zu PMT, Profilpflege und ETS-Generierung erfahren Sie [hier](https://gdibw.github.io/pmt/index.html).  
 
-&copy; 2017 European Union. Licensed under the [EUPL](LICENSE).
+Details über Metadatenprofil GDI-BW in der Version 2.0 sind [hier](https://www.geoportal-bw.de/regelungen-gdi-bw) zu finden. 
+
+Metadatenvalidierung GDI-BW ist auf [ETF-Validator](https://etf-validator.net/) (open-source testing framework für GDI-Ressourcen) basiert.
+
+© 2017 European Union. Licensed under the [EUPL](https://github.com/inspire-eu-validation/ets-repository/blob/master/LICENSE).
