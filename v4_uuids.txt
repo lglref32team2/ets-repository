@@ -1,4 +1,4 @@
-﻿** Pre-defined resources (Hans Peter ist daheim und mag nichts tun, muss aber bogus)
+﻿** Pre-defined resources (Hans Peter ist daheim und mag nichts tun, muss aber bogus und noch mehr)
 
 EID70a263c0-0ad7-42f2-9d4d-0d8a4ca71b52 Translation template (messages)
 EIDe1d4a306-7a78-4a3b-ae2d-cf5f0810853e Test object type: INSPIRE spatial data set encoded in GML
