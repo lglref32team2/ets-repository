@@ -9,3 +9,5 @@ Details über Metadatenprofil GDI-BW in der Version 2.0 sind [hier](https://www.
 Metadatenvalidierung GDI-BW ist auf [ETF-Validator](https://etf-validator.net/) (open-source testing framework für GDI-Ressourcen) basiert. 
 
 © 2017 European Union. Licensed under the [EUPL](https://github.com/inspire-eu-validation/ets-repository/blob/master/LICENSE).
+
+Läuft
